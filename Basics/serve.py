@@ -1,6 +1,4 @@
 #!/usr/bin/env python
-from typing import List
-
 from fastapi import FastAPI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
@@ -32,7 +30,6 @@ app = FastAPI(
 )
 
 # 5. Adding chain route
-
 add_routes(
     app,
     chain,
